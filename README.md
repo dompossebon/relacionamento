@@ -7,61 +7,106 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# relacionamento
+---------------------------------------------------------
+
+# Relacionamentos
+
+Código de estudo e auxilio para Jr.
+
 Um código simples como modelo para quem esta aprendendo! Apenas um exemplo operacional com um tutorial básico.
 
-## About Laravel
+- 1 para 1
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Cada cliente possui apenas um unico endereço
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 1 para N
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Um usuario podera ter muitos artigos
 
-## Learning Laravel
+- N para N
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Um post pode ter muitas categorias e o inverso tb.
+Uma categoria podera ter muitos post
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Dica: A grande Sacada está nas 'migrates' e nos 'models'
 
-## Laravel Sponsors
+Links funcionando.
+exemplo: http://127.0.0.1:8000/user/1
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Espero que esse código simples possa auxiliar novos devs!
 
-### Premium Partners
+---------------------------------------------------------
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+### 🛠 Tecnologias
 
-## Contributing
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- [Laravel v8.61.0](https://laravel.com/docs/8.x)
+- [PHP 7.4.23](https://www.php.net/downloads.php#v7.4.23)
 
-## Code of Conduct
+Funciona com servidor próprio do laravel(php artisan serve).
+Modelo Feito e Testado em Linux Ubunto 20.4
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Começando
 
-## Security Vulnerabilities
+Clone o repositório do projeto:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Caso você use HTTPS:
 
-## License
+git clone https://github.com/dompossebon/relacionamento.git
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---------------------------------------------------------
+
+Após a clonagem, entre no diretório da aplicação:
+
+cd relacionamento
+
+em seguida execute o comandos abaixo:
+
+composer install
+
+Na raiz do projeto localize e Duplique o arquivo .env.example e em seguida renomeie-o para .env usando o comando:
+
+cp .env.example .env
+
+Atenção, o usuário deverá configurar o atributos do banco de Dados em .env
+
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=nome_seu_banco_de_dados
+- DB_USERNAME=seu_usuario
+- DB_PASSWORD=sua_senha
+
+entao, após realizar tal tarefa, o usuário deverá rodar os comandos:
+
+---------------------------------------------------------
+
+Então rode o comando:
+
+- php artisan key:generate
+  
+ - php artisan migrate:fresh --seed
+
+---------------------------------------------------------
+
+## COLOCANDO O SERVIDOR LARAVEL EM AÇÃO
+
+UTILIZE O COMANDO:
+
+- php artisan serve
+
+Agora basta DIGITAR em seu Brownser e acessar:
+
+-  http://127.0.0.1:8000/
+
+---------------------------------------------------------
+
+## Construído com
+Laravel - O framework PHP para artesãos da Web
+
+## by Possebon
+## Contato dompossebon@gmail.com
+
+:+1: ## By Possebon
+
