@@ -41,4 +41,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function address()
+    {
+        return $this->hasOne(Address::class, 'user_id', 'id');
+        //O exemplo acima é apenas um modelo para exibir a forma que deve ser escrita quando o DEV nao utiliza nomenclatura padrão.
+        //ou seja, caso ele resolva escrever a foreingkey dentro da tabela address como: myId_user. logo, deveriamos escrever:
+        // $this->hasOne(Address::class, 'myId_user', 'id');
+    }
+
+    public function post()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
