@@ -1,3 +1,7 @@
+# Apenas Estudos - Relacionamento entre Tabelas
+PHP 7.4.24, Projeto Laravel Framework 8.61.0, Token, tymon/jwt-auth 1.0.2
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
