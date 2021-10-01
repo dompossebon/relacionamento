@@ -84,7 +84,9 @@ entao, após realizar tal tarefa, o usuário deverá rodar os comandos:
 
 Então rode o comando:
 
-- php artisan key:generate
+ - php artisan key:generate
+
+ - php artisan jwt:secret
   
  - php artisan migrate:fresh --seed
 

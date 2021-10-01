@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AddressController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PolymorphiController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -27,3 +28,6 @@ Route::apiResources([
     'post' => PostController::class,
     'category' => CategoryController::class
 ]);
+
+Route::get('polyGet', [PolymorphiController::class, 'index']);
+Route::get('polyPost', [PolymorphiController::class, 'insert']);

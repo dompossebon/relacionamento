@@ -13,4 +13,9 @@ class Category extends Model
     {
         return $this->belongsToMany(Post::class, 'posts_categories');
     }
+
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'commentable');
+    }
 }
