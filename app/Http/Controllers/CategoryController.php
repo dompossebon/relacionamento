@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * teste
      * @return \Illuminate\Http\Response
      */
     public function index()

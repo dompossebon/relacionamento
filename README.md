@@ -13,7 +13,7 @@ PHP 7.4.24, Projeto Laravel Framework 8.61.0, Token, tymon/jwt-auth 1.0.2
 
 ---------------------------------------------------------
 
-# Relacionamentos
+# Relacionamentos - teste commit by phpstorm 
 
 Código de estudo e auxilio para Jr.
 
